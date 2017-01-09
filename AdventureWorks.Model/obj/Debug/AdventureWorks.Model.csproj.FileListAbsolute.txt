@@ -1,0 +1,5 @@
+C:\development\solstice\AdventureWorks\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.csprojResolveAssemblyReference.cache
+C:\development\solstice\AdventureWorks\AdventureWorks.Model\bin\Debug\AdventureWorks.Model.dll
+C:\development\solstice\AdventureWorks\AdventureWorks.Model\bin\Debug\AdventureWorks.Model.pdb
+C:\development\solstice\AdventureWorks\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.dll
+C:\development\solstice\AdventureWorks\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.pdb
