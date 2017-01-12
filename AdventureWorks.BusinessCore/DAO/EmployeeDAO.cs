@@ -47,10 +47,6 @@ namespace AdventureWorks.BusinessCore.DAO
                 }
                 finally
                 {
-                    if (sqlConnection != null)
-                    {
-                        sqlConnection.Close();
-                    }
                     if (reader != null)
                     {
                         reader.Close();
@@ -59,6 +55,49 @@ namespace AdventureWorks.BusinessCore.DAO
             }
 
             return returnEmployees;
+        }
+
+        public Employee GetEmployee(int employeeID)
+        {
+            Employee employee = new Employee();
+            using (SqlConnection sqlConnection = new SqlConnection(CONNECTION_STRING))
+            {
+                SqlDataReader reader = null;
+
+                try
+                {
+                    sqlConnection.Open();
+
+                    SqlCommand cmd = new SqlCommand("dbo.usp_Employee_SelectSingle", sqlConnection);
+                    cmd.Parameters.AddWithValue("@employeeID", employeeID);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // execute the command
+                    reader = cmd.ExecuteReader();
+
+                    // iterate through results, printing each to console
+                    while (reader.Read())
+                    {
+                        employee.Id = Int32.Parse(reader["BusinessEntityID"].ToString());
+                        employee.NationalID = reader["NationalIDNumber"].ToString();
+                        employee.LoginID = reader["LoginID"].ToString();
+                        employee.JobTitle = reader["JobTitle"].ToString();
+                        employee.DateOfBirth = DateTime.Parse(reader["BirthDate"].ToString());
+                        employee.EmployeeMaritalStatus = reader["MaritalStatus"].ToString() == "M" ? MaritalStatus.Married : MaritalStatus.Single;
+                        employee.EmployeeSex = reader["Gender"].ToString() == "M" ? Sex.Male : Sex.Female;
+                        employee.HireOnDate = DateTime.Parse(reader["HireDate"].ToString());
+                    }
+                }
+                finally
+                {
+                    if (reader != null)
+                    {
+                        reader.Close();
+                    }
+                }
+            }
+
+            return employee;
         }
     }
 }

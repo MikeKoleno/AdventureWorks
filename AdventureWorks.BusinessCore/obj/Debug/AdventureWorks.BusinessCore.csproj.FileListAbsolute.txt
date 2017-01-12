@@ -6,3 +6,11 @@ C:\development\solstice\AdventureWorks\AdventureWorks.BusinessCore\bin\Debug\Adv
 C:\development\solstice\AdventureWorks\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.dll
 C:\development\solstice\AdventureWorks\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.pdb
 C:\development\solstice\AdventureWorks\AdventureWorks.BusinessCore\bin\Debug\AdventureWorks.BusinessCore.dll.config
+C:\development\adventureWorks\AdventureWorks.BusinessCore\bin\Debug\AdventureWorks.BusinessCore.dll.config
+C:\development\adventureWorks\AdventureWorks.BusinessCore\bin\Debug\AdventureWorks.BusinessCore.dll
+C:\development\adventureWorks\AdventureWorks.BusinessCore\bin\Debug\AdventureWorks.BusinessCore.pdb
+C:\development\adventureWorks\AdventureWorks.BusinessCore\bin\Debug\AdventureWorks.Model.dll
+C:\development\adventureWorks\AdventureWorks.BusinessCore\bin\Debug\AdventureWorks.Model.pdb
+C:\development\adventureWorks\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.csprojResolveAssemblyReference.cache
+C:\development\adventureWorks\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.dll
+C:\development\adventureWorks\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.pdb

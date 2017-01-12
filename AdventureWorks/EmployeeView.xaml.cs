@@ -18,11 +18,12 @@ namespace AdventureWorks
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EmployeeView : Window
     {
-        public MainWindow()
+        public EmployeeView()
         {
             InitializeComponent();
+
         }
     }
 }

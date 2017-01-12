@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\development\solstice\AdventureWorks\AdventureWorks\obj\Debug\
+C:\development\adventureWorks\AdventureWorks\obj\Debug\
 AdventureWorks
 none
 false
 DEBUG;TRACE
-C:\development\solstice\AdventureWorks\AdventureWorks\App.xaml
-11151548125
+C:\development\adventureWorks\AdventureWorks\App.xaml
+11490185265
 
-5-2017746502
+8-872674565
 13738642453
-MainWindow.xaml;
+EmployeeView.xaml;
 
 False
 

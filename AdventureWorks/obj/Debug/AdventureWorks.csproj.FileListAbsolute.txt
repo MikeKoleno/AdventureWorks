@@ -15,3 +15,17 @@ C:\development\solstice\AdventureWorks\AdventureWorks\obj\Debug\AdventureWorks.p
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks\bin\Debug\AdventureWorks.exe.config
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\AdventureWorks.exe
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\AdventureWorks.pdb
+C:\development\adventureWorks\AdventureWorks\bin\Debug\AdventureWorks.exe.config
+C:\development\adventureWorks\AdventureWorks\obj\Debug\AdventureWorks.exe
+C:\development\adventureWorks\AdventureWorks\obj\Debug\AdventureWorks.pdb
+C:\development\adventureWorks\AdventureWorks\bin\Debug\AdventureWorks.exe
+C:\development\adventureWorks\AdventureWorks\bin\Debug\AdventureWorks.pdb
+C:\development\adventureWorks\AdventureWorks\obj\Debug\AdventureWorks.csprojResolveAssemblyReference.cache
+C:\development\adventureWorks\AdventureWorks\obj\Debug\App.g.cs
+C:\development\adventureWorks\AdventureWorks\obj\Debug\AdventureWorks_MarkupCompile.cache
+C:\development\adventureWorks\AdventureWorks\obj\Debug\AdventureWorks_MarkupCompile.lref
+C:\development\adventureWorks\AdventureWorks\obj\Debug\AdventureWorks.g.resources
+C:\development\adventureWorks\AdventureWorks\obj\Debug\AdventureWorks.Properties.Resources.resources
+C:\development\adventureWorks\AdventureWorks\obj\Debug\AdventureWorks.csproj.GenerateResource.Cache
+C:\development\adventureWorks\AdventureWorks\obj\Debug\EmployeeView.g.cs
+C:\development\adventureWorks\AdventureWorks\obj\Debug\EmployeeView.baml

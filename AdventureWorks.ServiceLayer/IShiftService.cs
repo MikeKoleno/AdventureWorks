@@ -16,6 +16,10 @@ namespace AdventureWorks.ServiceLayer
         [OperationContract]
         [WebGet(BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         List<Shift> GetAllShifts();
+
+        [OperationContract]
+        [WebGet(BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+        Shift GetShift(string shiftID);
     }
 
 }

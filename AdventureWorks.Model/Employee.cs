@@ -103,11 +103,11 @@ namespace AdventureWorks.Model
             if (this.DateOfBirth == null)
                 this.DateOfBirthString = "";
             else
-                this.DateOfBirthString = this.DateOfBirth.ToString("MMM/dd/yyyy HH:mm", CultureInfo.InvariantCulture);
+                this.DateOfBirthString = this.DateOfBirth.ToString("yyyy-MM-dd HH.mm.ss", CultureInfo.InvariantCulture);
             if (this.HireOnDate == null)
                 this.HireOnDateString = "";
             else
-                this.HireOnDateString = this.HireOnDate.ToString("MMM/dd/yyyy HH:mm", CultureInfo.InvariantCulture);
+                this.HireOnDateString = this.HireOnDate.ToString("yyyy-MM-dd HH.mm.ss", CultureInfo.InvariantCulture);
         }
 
         [OnDeserialized]
@@ -116,11 +116,11 @@ namespace AdventureWorks.Model
             if (this.DateOfBirthString == null)
                 this.DateOfBirth = DateTime.MinValue;
             else
-                this.DateOfBirth = DateTime.ParseExact(this.DateOfBirthString, "MMM/dd/yyyy HH:mm", CultureInfo.InvariantCulture);
+                this.DateOfBirth = DateTime.ParseExact(this.DateOfBirthString, "yyyy-MM-dd HH.mm.ss", CultureInfo.InvariantCulture);
             if (this.HireOnDateString == null)
                 this.HireOnDate = DateTime.MinValue;
             else
-                this.HireOnDate = DateTime.ParseExact(this.HireOnDateString, "MMM/dd/yyyy HH:mm", CultureInfo.InvariantCulture);
+                this.HireOnDate = DateTime.ParseExact(this.HireOnDateString, "yyyy-MM-dd HH.mm.ss", CultureInfo.InvariantCulture);
         }
 
         [IgnoreDataMember]

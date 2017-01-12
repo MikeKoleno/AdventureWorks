@@ -8,15 +8,15 @@ using AdventureWorks.BusinessCore.DAO;
 
 namespace AdventureWorks.BusinessCore
 {
-    public class DbFactory
+    public class DAOFactory
     {
-        private static volatile DbFactory instance;
+        private static volatile DAOFactory instance;
         private static object syncRoot = new Object();
 
         private readonly ShiftDAO shiftDataAccess = new ShiftDAO();
         private readonly EmployeeDAO employeeDataAccess = new EmployeeDAO();
 
-        private DbFactory() { }
+        private DAOFactory() { }
 
         public ShiftDAO ShiftDataAccess
         {
@@ -34,14 +34,14 @@ namespace AdventureWorks.BusinessCore
             }
         }
 
-        public static DbFactory GetInstance()
+        public static DAOFactory GetInstance()
         {
             if (instance == null)
             {
                 lock (syncRoot)
                 {
                     if (instance == null)
-                        instance = new DbFactory();
+                        instance = new DAOFactory();
                 }
             }
 
