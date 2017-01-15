@@ -14,6 +14,7 @@ C:\development\adventureWorks\AdventureWorks.BusinessCore\bin\Debug\AdventureWor
 C:\development\adventureWorks\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.csprojResolveAssemblyReference.cache
 C:\development\adventureWorks\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.dll
 C:\development\adventureWorks\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.pdb
+<<<<<<< HEAD
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.BusinessCore\bin\Debug\AdventureWorks.BusinessCore.dll.config
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.BusinessCore\bin\Debug\AdventureWorks.BusinessCore.dll
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.BusinessCore\bin\Debug\AdventureWorks.BusinessCore.pdb
@@ -22,3 +23,5 @@ C:\development\solstice\AdventureWorksMVVM\AdventureWorks.BusinessCore\bin\Debug
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.csprojResolveAssemblyReference.cache
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.dll
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.BusinessCore\obj\Debug\AdventureWorks.BusinessCore.pdb
+=======
+>>>>>>> 61fd73d6c736990407309b2b4d4cd74dc65b3e29

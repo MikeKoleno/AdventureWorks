@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\
+=======
+C:\development\adventureWorks\AdventureWorks\obj\Debug\
+>>>>>>> 61fd73d6c736990407309b2b4d4cd74dc65b3e29
 AdventureWorks
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks\App.xaml
 11490185265
 
 8-872674565
 1554310197
+=======
+C:\development\adventureWorks\AdventureWorks\App.xaml
+11490185265
+
+8-872674565
+13738642453
+>>>>>>> 61fd73d6c736990407309b2b4d4cd74dc65b3e29
 EmployeeView.xaml;
 
 False

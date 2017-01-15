@@ -8,8 +8,11 @@ C:\development\adventureWorks\AdventureWorks.Model\bin\Debug\AdventureWorks.Mode
 C:\development\adventureWorks\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.csprojResolveAssemblyReference.cache
 C:\development\adventureWorks\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.dll
 C:\development\adventureWorks\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.pdb
+<<<<<<< HEAD
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.Model\bin\Debug\AdventureWorks.Model.dll
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.Model\bin\Debug\AdventureWorks.Model.pdb
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.csprojResolveAssemblyReference.cache
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.dll
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.Model\obj\Debug\AdventureWorks.Model.pdb
+=======
+>>>>>>> 61fd73d6c736990407309b2b4d4cd74dc65b3e29

@@ -44,6 +44,7 @@ C:\development\adventureWorks\AdventureWorks.ServiceLayer\bin\Microsoft.Applicat
 C:\development\adventureWorks\AdventureWorks.ServiceLayer\obj\Debug\AdventureWorks.ServiceLayer.csprojResolveAssemblyReference.cache
 C:\development\adventureWorks\AdventureWorks.ServiceLayer\obj\Debug\AdventureWorks.ServiceLayer.dll
 C:\development\adventureWorks\AdventureWorks.ServiceLayer\obj\Debug\AdventureWorks.ServiceLayer.pdb
+<<<<<<< HEAD
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.ServiceLayer\bin\ApplicationInsights.config
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.ServiceLayer\bin\AdventureWorks.ServiceLayer.dll.config
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.ServiceLayer\bin\AdventureWorks.ServiceLayer.dll
@@ -67,3 +68,5 @@ C:\development\solstice\AdventureWorksMVVM\AdventureWorks.ServiceLayer\bin\Micro
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.ServiceLayer\obj\Debug\AdventureWorks.ServiceLayer.csprojResolveAssemblyReference.cache
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.ServiceLayer\obj\Debug\AdventureWorks.ServiceLayer.dll
 C:\development\solstice\AdventureWorksMVVM\AdventureWorks.ServiceLayer\obj\Debug\AdventureWorks.ServiceLayer.pdb
+=======
+>>>>>>> 61fd73d6c736990407309b2b4d4cd74dc65b3e29
