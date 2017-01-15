@@ -17,8 +17,15 @@ namespace AdventureWorks.ServiceLayer
         [WebGet(BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json, UriTemplate = "/")]
         public List<Employee> GetAllEmployees()
         {
-            List<Employee> allEmployees = DbFactory.GetInstance().EmployeeDataAccess.GetAllEmployees();
+            List<Employee> allEmployees = CoreFactory.GetInstance().EmployeeBusinessLogic.GetAllEmployees();
             return allEmployees;
+        }
+
+        [WebGet(BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json, UriTemplate = "/{employeeID}")]
+        public Employee GetEmployee(string employeeID)
+        {
+            Employee employee = CoreFactory.GetInstance().EmployeeBusinessLogic.GetEmployee(Int32.Parse(employeeID));
+            return employee;
         }
     }
 }

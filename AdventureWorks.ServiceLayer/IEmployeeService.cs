@@ -14,7 +14,9 @@ namespace AdventureWorks.ServiceLayer
     public interface IEmployeeService
     {
         [OperationContract]
-        [WebGet(BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         List<Employee> GetAllEmployees();
+
+        [OperationContract]
+        Employee GetEmployee(string employeeID);
     }
 }

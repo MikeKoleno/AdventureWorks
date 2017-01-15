@@ -45,10 +45,6 @@ namespace AdventureWorks.BusinessCore.DAO
                 }
                 finally
                 {
-                    if (sqlConnection != null)
-                    {
-                        sqlConnection.Close();
-                    }
                     if (reader != null)
                     {
                         reader.Close();
@@ -57,6 +53,45 @@ namespace AdventureWorks.BusinessCore.DAO
             }
 
             return returnShifts;
+        }
+
+        public Shift GetShift(int shiftID)
+        {
+            Shift shift = new Shift();
+            using (SqlConnection sqlConnection = new SqlConnection(CONNECTION_STRING))
+            {
+                SqlDataReader reader = null;
+
+                try
+                {
+                    sqlConnection.Open();
+
+                    SqlCommand cmd = new SqlCommand("dbo.usp_Shift_SelectSingle", sqlConnection);
+                    cmd.Parameters.AddWithValue("@shiftID", shiftID);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // execute the command
+                    reader = cmd.ExecuteReader();
+
+                    // iterate through results, printing each to console
+                    while (reader.Read())
+                    {
+                        shift.Id = Int32.Parse(reader["ShiftID"].ToString());
+                        shift.Name = reader["Name"].ToString();
+                        shift.StartTime = new Time(DateTime.Parse(reader["StartTime"].ToString()));
+                        shift.EndTime = new Time(DateTime.Parse(reader["EndTime"].ToString()));
+                    }
+                }
+                finally
+                {
+                    if (reader != null)
+                    {
+                        reader.Close();
+                    }
+                }
+            }
+
+            return shift;
         }
     }
 }
