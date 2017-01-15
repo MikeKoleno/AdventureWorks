@@ -1,13 +1,8 @@
-<<<<<<< HEAD
-﻿using AdventureWorks.BusinessCore.BLL;
+using AdventureWorks.BusinessCore.BLL;
 using AdventureWorks.Model;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-=======
-﻿using System;
-using System.Collections.Generic;
->>>>>>> 61fd73d6c736990407309b2b4d4cd74dc65b3e29
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,7 +11,6 @@ namespace AdventureWorks.ViewModel
 {
     public class EmployeeViewModel : ViewModelBase
     {
-<<<<<<< HEAD
         Employee _employeeObj;
         ObservableCollection<string> _genderListSourceValues = new ObservableCollection<string>() { "Male", "Female" };
         ObservableCollection<string> _martialStatusListSourceValues = new ObservableCollection<string>() { "Single", "Married" };
@@ -86,8 +80,5 @@ namespace AdventureWorks.ViewModel
                 base.RaisePropertyChanged("SelectedMaritalStatus");
             }
         }
-=======
-
->>>>>>> 61fd73d6c736990407309b2b4d4cd74dc65b3e29
     }
 }

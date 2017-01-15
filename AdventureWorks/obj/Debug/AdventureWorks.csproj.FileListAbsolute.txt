@@ -29,22 +29,3 @@ C:\development\adventureWorks\AdventureWorks\obj\Debug\AdventureWorks.Properties
 C:\development\adventureWorks\AdventureWorks\obj\Debug\AdventureWorks.csproj.GenerateResource.Cache
 C:\development\adventureWorks\AdventureWorks\obj\Debug\EmployeeView.g.cs
 C:\development\adventureWorks\AdventureWorks\obj\Debug\EmployeeView.baml
-<<<<<<< HEAD
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\bin\Debug\AdventureWorks.exe
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\bin\Debug\AdventureWorks.pdb
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\AdventureWorks.csprojResolveAssemblyReference.cache
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\EmployeeView.g.cs
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\App.g.cs
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\AdventureWorks_MarkupCompile.cache
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\AdventureWorks_MarkupCompile.lref
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\EmployeeView.baml
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\AdventureWorks.g.resources
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\AdventureWorks.Properties.Resources.resources
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\AdventureWorks.csproj.GenerateResource.Cache
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\bin\Debug\AdventureWorks.BusinessCore.dll
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\bin\Debug\AdventureWorks.Model.dll
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\bin\Debug\AdventureWorks.BusinessCore.pdb
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\bin\Debug\AdventureWorks.Model.pdb
-C:\development\solstice\AdventureWorksMVVM\AdventureWorks\obj\Debug\GeneratedInternalTypeHelper.g.cs
-=======
->>>>>>> 61fd73d6c736990407309b2b4d4cd74dc65b3e29

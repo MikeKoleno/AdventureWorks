@@ -3,7 +3,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-<<<<<<< HEAD
         xmlns:vm="clr-namespace:AdventureWorks.ViewModel"
         xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
         xmlns:local="clr-namespace:AdventureWorks"
@@ -54,48 +53,5 @@
             <Button Grid.Row="9" Grid.Column="1" HorizontalAlignment="Right" 
             MinWidth="80" MinHeight="50" Margin="3" Content="Update"  />
         </Grid>
-=======
-        xmlns:local="clr-namespace:AdventureWorks"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600" WindowStartupLocation="CenterOwner">
-    <Grid>
-        <StackPanel>
-            <Grid>
-                <!--Grid goes here-->
-            </Grid>
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="28" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Content="National ID:"/>
-                <Label Grid.Row="1" Grid.Column="0" Content="Login ID:"/>
-                <Label Grid.Row="2" Grid.Column="0" Content="Job Title:"/>
-                <Label Grid.Row="3" Grid.Column="0" Content="Birth Date:"/>
-                <Label Grid.Row="4" Grid.Column="0" Content="Marital Status:"/>
-                <Label Grid.Row="5" Grid.Column="0" Content="Gender:"/>
-                <Label Grid.Row="6" Grid.Column="0" Content="Hire Date:"/>
-                <TextBox Grid.Column="1" Grid.Row="0" Margin="3" />
-                <TextBox Grid.Column="1" Grid.Row="1" Margin="3" />
-                <TextBox Grid.Column="1" Grid.Row="2" Margin="3" />
-                <TextBox Grid.Column="1" Grid.Row="3" Margin="3" />
-                <TextBox Grid.Column="1" Grid.Row="4" Margin="3" />
-                <TextBox Grid.Column="1" Grid.Row="5" Margin="3" />
-                <TextBox Grid.Column="1" Grid.Row="6" Margin="3" />
-                <Button Grid.Column="1" Grid.Row="7" HorizontalAlignment="Right" 
-            MinWidth="80" Margin="3" Content="Send"  />
-            </Grid>
-        </StackPanel>
->>>>>>> 61fd73d6c736990407309b2b4d4cd74dc65b3e29
     </Grid>
 </Window>
