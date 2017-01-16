@@ -17,14 +17,14 @@ namespace AdventureWorks.ServiceLayer
         [WebGet(BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json, UriTemplate = "/")]
         public List<Shift> GetAllShifts()
         {
-            List<Shift> allShifts = DAOFactory.GetInstance().ShiftDataAccess.GetAllShifts();
+            List<Shift> allShifts = CoreFactory.GetInstance().ShiftBusinessLogic.GetAllShifts();
             return allShifts;
         }
 
         [WebGet(BodyStyle = WebMessageBodyStyle.Bare, ResponseFormat = WebMessageFormat.Json, UriTemplate = "/{shiftID}")]
         public Shift GetShift(string shiftID)
         {
-            Shift shift = DAOFactory.GetInstance().ShiftDataAccess.GetShift(Int32.Parse(shiftID));
+            Shift shift = CoreFactory.GetInstance().ShiftBusinessLogic.GetShift(Int32.Parse(shiftID));
             return shift;
         }
     }

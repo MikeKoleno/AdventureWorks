@@ -42,8 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\EmployeeBLL.cs" />
+    <Compile Include="BLL\ShiftBLL.cs" />
     <Compile Include="CoreFactory.cs" />
-    <Compile Include="DAOFactory.cs" />
     <Compile Include="DAO\EmployeeDAO.cs" />
     <Compile Include="DAO\ShiftDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

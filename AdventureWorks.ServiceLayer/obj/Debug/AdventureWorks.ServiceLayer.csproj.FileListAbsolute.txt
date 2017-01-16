@@ -44,4 +44,3 @@ C:\development\adventureWorks\AdventureWorks.ServiceLayer\bin\Microsoft.Applicat
 C:\development\adventureWorks\AdventureWorks.ServiceLayer\obj\Debug\AdventureWorks.ServiceLayer.csprojResolveAssemblyReference.cache
 C:\development\adventureWorks\AdventureWorks.ServiceLayer\obj\Debug\AdventureWorks.ServiceLayer.dll
 C:\development\adventureWorks\AdventureWorks.ServiceLayer\obj\Debug\AdventureWorks.ServiceLayer.pdb
-

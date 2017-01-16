@@ -15,6 +15,7 @@ namespace AdventureWorks.BusinessCore
         private static object syncRoot = new Object();
 
         private readonly EmployeeBLL employeeBusinessLogic = new EmployeeBLL();
+        private readonly ShiftBLL shiftBusinessLogic = new ShiftBLL();
 
         private CoreFactory() { }
 
@@ -23,6 +24,14 @@ namespace AdventureWorks.BusinessCore
             get
             {
                 return employeeBusinessLogic;
+            }
+        }
+
+        public ShiftBLL ShiftBusinessLogic
+        {
+            get
+            {
+                return shiftBusinessLogic;
             }
         }
 

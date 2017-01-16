@@ -1,6 +1,7 @@
 ﻿using AdventureWorks.Model;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -11,11 +12,11 @@ namespace AdventureWorks.BusinessCore.DAO
 {
     public class EmployeeDAO
     {
-        private const string CONNECTION_STRING = @"Server=tcp:cfq4uoqy8a.database.windows.net,1433;Initial Catalog=AdventureWorks2012;Persist Security Info=False;User ID=mjsonAdmin;Password=Solstice123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public List<Employee> GetAllEmployees()
         {
             List<Employee> returnEmployees = new List<Employee>();
-            using (SqlConnection sqlConnection = new SqlConnection(CONNECTION_STRING))
+            string conn = ConfigurationManager.ConnectionStrings["azureAdventureWorks"].ConnectionString;
+            using (SqlConnection sqlConnection = new SqlConnection(conn))
             {
                 SqlDataReader reader = null;
 
@@ -60,7 +61,8 @@ namespace AdventureWorks.BusinessCore.DAO
         public Employee GetEmployee(int employeeID)
         {
             Employee employee = new Employee();
-            using (SqlConnection sqlConnection = new SqlConnection(CONNECTION_STRING))
+            string conn = ConfigurationManager.ConnectionStrings["azureAdventureWorks"].ConnectionString;
+            using (SqlConnection sqlConnection = new SqlConnection(conn))
             {
                 SqlDataReader reader = null;
 
@@ -98,6 +100,34 @@ namespace AdventureWorks.BusinessCore.DAO
             }
 
             return employee;
+        }
+
+        public void UpdateEmployee(Employee employeeToUpdate)
+        {
+            string conn = ConfigurationManager.ConnectionStrings["azureAdventureWorks"].ConnectionString;
+            using (SqlConnection sqlConnection = new SqlConnection(conn))
+            {
+                try
+                {
+                    sqlConnection.Open();
+
+                    SqlCommand cmd = new SqlCommand("dbo.usp_Employee_Update", sqlConnection);
+                    cmd.Parameters.AddWithValue("@businessEntityID", employeeToUpdate.Id);
+                    cmd.Parameters.AddWithValue("@nationalIDNumber", employeeToUpdate.NationalID);
+                    cmd.Parameters.AddWithValue("@loginID", employeeToUpdate.LoginID);
+                    cmd.Parameters.AddWithValue("@jobTitle", employeeToUpdate.JobTitle);
+                    cmd.Parameters.AddWithValue("@birthDate", employeeToUpdate.DateOfBirth);
+                    cmd.Parameters.AddWithValue("@maritalStatus", employeeToUpdate.EmployeeMaritalStatus == MaritalStatus.Single ? 'S' : 'M');
+                    cmd.Parameters.AddWithValue("@gender", employeeToUpdate.EmployeeSex == Sex.Female ? 'F' : 'M');
+                    cmd.Parameters.AddWithValue("@hireDate", employeeToUpdate.HireOnDate);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.ExecuteNonQuery();
+                } catch (System.Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
         }
     }
 }

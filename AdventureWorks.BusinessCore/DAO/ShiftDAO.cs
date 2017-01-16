@@ -13,11 +13,11 @@ namespace AdventureWorks.BusinessCore.DAO
 {
     public class ShiftDAO
     {
-        private const string CONNECTION_STRING = @"Server=tcp:cfq4uoqy8a.database.windows.net,1433;Initial Catalog=AdventureWorks2012;Persist Security Info=False;User ID=mjsonAdmin;Password=Solstice123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public List<Shift> GetAllShifts()
         {
             List<Shift> returnShifts = new List<Shift>();
-            using (SqlConnection sqlConnection = new SqlConnection(CONNECTION_STRING))
+            string conn = ConfigurationManager.ConnectionStrings["azureAdventureWorks"].ConnectionString;
+            using (SqlConnection sqlConnection = new SqlConnection(conn))
             {
                 SqlDataReader reader = null;
 
@@ -58,7 +58,8 @@ namespace AdventureWorks.BusinessCore.DAO
         public Shift GetShift(int shiftID)
         {
             Shift shift = new Shift();
-            using (SqlConnection sqlConnection = new SqlConnection(CONNECTION_STRING))
+            string conn = ConfigurationManager.ConnectionStrings["azureAdventureWorks"].ConnectionString;
+            using (SqlConnection sqlConnection = new SqlConnection(conn))
             {
                 SqlDataReader reader = null;
 
