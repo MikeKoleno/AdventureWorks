@@ -75,19 +75,18 @@ IF ( OBJECT_ID('dbo.usp_Employee_Update') IS NOT NULL )
 GO
 
 CREATE PROCEDURE dbo.usp_Employee_Update
-       @businessEntityID INT,
+	   @businessEntityID INT,
 	   @nationalIDNumber INT,
 	   @loginID varchar(255),
 	   @jobTitle varchar(255),
 	   @birthDate datetime,
 	   @maritalStatus char,
 	   @gender char,
-	   @hireDate
+	   @hireDate datetime
   AS
 BEGIN
      UPDATE HumanResources.Employee 
      SET 
-			BusinessEntityID = @businessEntityID,
 			NationalIDNumber = @nationalIDNumber,
 			LoginID = @loginID,	
 			JobTitle = @jobTitle,

@@ -9,7 +9,7 @@
         xmlns:prism="clr-namespace:Microsoft.Practices.Prism.Mvvm;assembly=Microsoft.Practices.Prism.Mvvm.Desktop"
         mc:Ignorable="d"
         Title="MainWindow" Height="720" Width="1280" WindowStartupLocation="CenterOwner">
-        <!--prism:ViewModelLocator.AutoWireViewModel="True"-->
+    <!--prism:ViewModelLocator.AutoWireViewModel="True"-->
     <Window.DataContext>
         <viewModel:EmployeeWindowViewModel />
     </Window.DataContext>
@@ -45,13 +45,15 @@
             <Label Grid.Row="2" Grid.Column="0" Content="Job Title:"/>
             <TextBox Grid.Row="2" Grid.Column="1" Margin="3" Text="{Binding EmployeeObj.JobTitle}"/>
             <Label Grid.Row="3" Grid.Column="0" Content="Birth Date:"/>
-            <DatePicker Grid.Row="3" Grid.Column="1" Margin="3" SelectedDate="{Binding EmployeeObj.DateOfBirth}" />
+            <DatePicker Grid.Row="3" Grid.Column="1" Margin="3" Text="{Binding EmployeeObj.DateOfBirth}"/>
             <Label Grid.Row="4" Grid.Column="0" Content="Marital Status:"/>
             <ComboBox Grid.Row="4" Grid.Column="1" Margin="3" ItemsSource="{Binding MartialStatusListSourceValues}" SelectedValue="{Binding SelectedMaritalStatus}" />
             <Label Grid.Row="5" Grid.Column="0" Content="Gender:"/>
             <ComboBox Grid.Row="5" Grid.Column="1" Margin="3" ItemsSource="{Binding GenderListSourceValues}" SelectedValue="{Binding SelectedGender}" />
             <Label Grid.Row="6" Grid.Column="0" Content="Hire Date:"/>
-            <DatePicker Grid.Row="6" Grid.Column="1" Margin="3" SelectedDate="{Binding EmployeeObj.HireOnDate}" />
+            <DatePicker Grid.Row="6" Grid.Column="1" Margin="3" Text="{Binding EmployeeObj.HireOnDate}"/>
+            <!--<Button Grid.Row="8" Grid.Column="1" HorizontalAlignment="Right" 
+            MinWidth="80" MinHeight="50" Margin="0,2.5,3,0" Content="Update" Height="50" VerticalAlignment="Top"/>-->
             <Button Grid.Row="9" Grid.Column="1" HorizontalAlignment="Right" 
             MinWidth="80" MinHeight="50" Margin="3" Content="Update" Command="{Binding UpdateEmployeeCommand}"  />
         </Grid>

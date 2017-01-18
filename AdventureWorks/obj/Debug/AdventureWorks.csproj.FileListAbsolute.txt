@@ -47,3 +47,5 @@ C:\development\adventureworks\AdventureWorks\bin\Debug\Microsoft.Practices.Prism
 C:\development\adventureworks\AdventureWorks\obj\Debug\EmployeeWindow.g.cs
 C:\development\adventureworks\AdventureWorks\obj\Debug\EmployeeWindow.baml
 C:\development\adventureworks\AdventureWorks\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\development\adventureworks\AdventureWorks\obj\Debug\TestWindow.g.cs
+C:\development\adventureworks\AdventureWorks\obj\Debug\TestWindow.baml
